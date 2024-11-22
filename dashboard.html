@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Todo List</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Minha Lista de Tarefas</h1>
+            <button class="logout" onclick="logout()">Sair</button>
+        </div>
+
+        <form class="todo-form" id="todoForm" action="add">
+            <input type="text" id="todoInput" placeholder="Adicionar nova tarefa..." required>
+            <button type="submit" id="adicionar">Adicionar</button>
+        </form>
+
+        <div class="todo-list" id="todoList">
+            <!-- Os itens serão adicionados aqui dinamicamente -->
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
